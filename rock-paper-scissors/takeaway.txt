@@ -1,0 +1,24 @@
+List of methods used:
+
+.getElementById() - gets element by ID
+.querySelectorAll() - to select all the elements of a specific tag/class name
+.forEach() - This is used for a nodelist or an array of elements - 
+Unlike the previous project,instead of looping all the elements formed as a nodelist to access each element like we have done on the modal window project of Javascript. 
+We can use forEach()
+
+There are three choices rock, paper, scissors - user must click a button, an event occurs
+For such an event we have created a nodelist using querSelectorAll 
+>> const possibleChoices = document.querySelectorAll('button')
+>> possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click', (event) => {
+        userChoice = event.target.id;
+        userChoiceDisplay.innerHTML = userChoice;
+        }
+
+
+
+
+.addEventListener() - method to handle an event
+.innerHTML - to change the inner html
+.e.target.id - this targets and picks the id of the element on ehich the event is occuring.
+Math.floor()
+Math.random() - Generates a random number between 0 and 1
